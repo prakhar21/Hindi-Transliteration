@@ -6,7 +6,7 @@ Online tool to convert Keyboard friendly typable language to it's corresponding 
 * All the transliteration scheme can be found at [English-Hindi Transliteration Scheme](https://www.researchgate.net/figure/English-Hindi-Transliteration-mapping_fig1_220745891)
 
 # Demo
-![Transliteration Demo](https://github.com/prakhar21/Hindi-Transliteration/blob/master/transliteration.gif)
+![Transliteration Demo](https://github.com/prakhar21/Hindi-Transliteration/blob/master/transliteration.gif =250x250)
 
 # Technologies
 1. Flask
