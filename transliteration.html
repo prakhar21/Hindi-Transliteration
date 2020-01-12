@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Transliteration Demo</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div class="container">
+<br><h2>Transliteration Demo</h2>
+  <p>Type text in the below provided space to experience realtime hindi transliteration</p>
+  <form>
+    <div class="form-group">
+      <label for="comment">Input text:</label>	
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+  </form>
+
+  <div class="output">
+  	<p id="hindi" style="font-size: 20px;"></p>
+  </div>
+
+  <br><br>
+  <div class="instructions">
+  	<table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Charcter</th>
+        <th>----></th>
+        <th>Hindi Equivalent</th>
+        <th>Charcter</th>
+        <th>----></th>
+        <th>Hindi Equivalent</th>
+        <th>Charcter</th>
+        <th>----></th>
+        <th>Hindi Equivalent</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="success">
+        <td>kh</td>
+        <td></td>
+  		<td>ख</td>
+  		<td>m/ma</td>
+  		<td></td>
+  		<td>म</td>
+  		<td>y/ya</td>
+  		<td></td>
+  		<td>य</td>
+      </tr>
+      <tr class="success">
+      	<td>ai</td>
+      	<td></td>
+  		<td>ऐ</td>
+  		<td>k/ka</td>
+  		<td></td>
+  		<td>क</td>
+  		<td>r/ra</td>
+  		<td></td>
+  		<td>र</td>
+  	  </tr>
+  	  <tr class="success">
+      	<td>gha</td>
+      	<td></td>
+  		<td>घ</td>
+  		<td>g/ga</td>
+  		<td></td>
+  		<td>ग</td>
+  		<td>m/ma</td>
+  		<td></td>
+  		<td>म</td>
+  	  </tr>
+  	  <tr class="success">
+      	<td>ch</td>
+      	<td></td>
+  		<td>च</td>
+  		<td>chh</td>
+  		<td></td>
+  		<td>छ</td>
+  		<td>l/la</td>
+  		<td></td>
+  		<td>ल</td>
+  	  </tr>
+  	  <tr class="success">
+  		<td>jha</td>
+  		<td></td>
+  		<td>झ</td>
+  		<td>j/ja</td>
+      	<td></td>
+  		<td>ज</td>
+  		<td>v/va</td>
+  		<td></td>
+  		<td>व</td>
+  	  </tr>
+  	  <tr class="success">
+  		<td>tha</td>
+  		<td></td>
+  		<td>ठ</td>
+  		<td>t/ta</td>
+      	<td></td>
+  		<td>ट</td>
+  		<td>sh</td>
+  		<td></td>
+  		<td>श</td>
+  	  </tr>
+  	  <tr class="success">
+  		<td>da</td>
+  		<td></td>
+  		<td>ड</td>
+  		<td>dh</td>
+      	<td></td>
+  		<td>ध</td>
+  		<td>sha</td>
+  		<td></td>
+  		<td>ष</td>
+  	  </tr>
+  	  <tr class="success">
+  		<td>t/ta</td>
+  		<td></td>
+  		<td>त</td>
+  		<td>th</td>
+      	<td></td>
+  		<td>थ</td>
+  		<td>s/sa</td>
+      	<td></td>
+  		<td>स</td>
+
+  	  </tr>
+  	  <tr class="success">
+  		<td>d</td>
+  		<td></td>
+  		<td>द</td>
+  		<td>n/na</td>
+      	<td></td>
+  		<td>न</td>
+  		<td>h</td>
+      	<td></td>
+  		<td>ह</td>
+  	  </tr>
+  	  <tr class="success">
+  		<td>b/ba</td>
+  		<td></td>
+  		<td>ब</td>
+  		<td>p/pa</td>
+      	<td></td>
+  		<td>प</td>
+  		<td class="danger">0/1/2/../9</td>
+      	<td class="danger"></td>
+  		<td class="danger">०/१/२../९</td>
+  	  </tr>
+  	  <tr class="success">
+  		<td>bh</td>
+  		<td></td>
+  		<td>भ</td>
+  		<td>f/ph</td>
+      	<td></td>
+  		<td>फ</td>
+  	  </tr>
+  	  <tr class="warning">
+  		<td>A</td>
+  		<td></td>
+  		<td>ा</td>
+  		<td>II</td>
+      	<td></td>
+  		<td>ी</td>
+  	  </tr>
+  	  <tr class="warning">
+  		<td>I</td>
+  		<td></td>
+  		<td>ि</td>
+  		<td>AE</td>
+      	<td></td>
+  		<td>े</td>
+  	  </tr>
+  	  <tr class="warning">
+  		<td>AYE</td>
+  		<td></td>
+  		<td>ै</td>
+  		<td>U</td>
+      	<td></td>
+  		<td>ु</td>
+  	  </tr>
+  	  <tr class="warning">
+  		<td>UU</td>
+  		<td></td>
+  		<td>ू</td>
+  		<td>O</td>
+      	<td></td>
+  		<td>ो</td>
+  	  </tr>
+  	  <tr class="warning">
+  		<td>OO</td>
+  		<td></td>
+  		<td>ौ</td>
+  		<td></td>
+      	<td></td>
+  		<td></td>
+  	  </tr>
+    </tbody>
+  </table>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+	document.body.onkeyup = function(e){
+	    if(e.keyCode == 32){
+	        transliterate()
+	    }
+	}
+
+	function transliterate(){
+		var input_word = document.getElementById('comment').value.split(" ").slice(-2)[0]
+		var URL = 'http://0.0.0.0:5555/transliterate'
+		var dataString = "text="+input_word;
+		console.log(dataString)
+		$.ajax({
+		    type: 'POST',
+		    url: URL,
+		    data: dataString,
+		    success: function(resp) {
+		    	if (resp.length===0){
+		    	document.getElementById('hindi').innerHTML = ''	
+		    	}else{
+		      	document.getElementById('hindi').innerHTML += resp + ' '
+		      }
+		    }
+		});
+	}
+	
+</script>
+	
+</body>
+</html>
