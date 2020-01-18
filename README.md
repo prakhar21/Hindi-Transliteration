@@ -1,4 +1,8 @@
 # Hindi-Transliteration
+<p align="center">
+  <img width="158" height="250" src="https://www.google.com/inputtools/images/features/t13n.png">
+</p>
+
 
 Online tool to convert Keyboard friendly typable English language to it's corresponding Hindi transliteration.  It's a rule based matching system as of now and is supposed to be upgraded with time.
 
